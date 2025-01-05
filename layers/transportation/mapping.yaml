@@ -154,6 +154,10 @@ network_field: &network
   key: network
   name: network
   type: string
+osmc_symbol_field: &osmc_symbol
+  key: osmc_symbol
+  name: osmc_symbol
+  type: string
 layer_field: &layer
   key: layer
   name: layer
@@ -223,6 +227,7 @@ tables:
       type: string
     - *ref
     - *network
+    - *osmc_symbol
     - *z_order
     - *layer
     - *level
@@ -476,6 +481,7 @@ tables:
       type: member_type
     - *ref
     - *network
+    - *osmc_symbol
     - *name
     - name: osmc_symbol
       key: osmc:symbol
